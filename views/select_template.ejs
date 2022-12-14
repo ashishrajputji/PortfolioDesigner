@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Select Best Template</title>
+    <link rel="stylesheet" href="../css/select_template.css" />
+    <link rel="stylesheet" href="../css/nav.css" />
+    <link rel="stylesheet" href="../css/profile.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+  </head>
+  <body>
+    <%- include("nav") -%>
+    <div>
+      <a href="/create-portfolio-website-temp1"
+        ><div class="select-div">
+          <img src="../images/Template1.png" alt="" />
+          <h1 class="select-h1">Tempalte with Grey background</h1>
+        </div>
+      </a>
+      <a href="/create-portfolio-website-temp2">
+        <div class="select-div div-2">
+          <img src="../images/template2.png" alt="" />
+          <h1 class="select-h1">Tempalte with Royal Blue background</h1>
+        </div>
+      </a>
+    </div>
+
+    <%- include("footer") -%>
+    <script src="../js/nav.js"></script>
+  </body>
+</html>

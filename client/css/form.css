@@ -1,0 +1,69 @@
+form{
+    text-align: center;
+    align-items: center;
+}
+input[type=file]{
+    color: red;
+    width: 20vw;
+}
+label{
+    display: block;
+}
+input{
+    margin-right: 2rem;
+    width: 40vw;
+}
+
+.addmore{
+    background-color: rgb(236, 39, 39);
+    color: white;
+    border: 0px;
+    border-radius: 0.25rem;
+    padding: 0.5rem 2rem;
+    margin: 0.2rem auto;
+    margin-left: 5vw;
+    font-size: 1rem;
+}
+.addmore:hover{
+    background-color: red;
+}
+.submit-form{
+    background-color: rgb(23, 135, 220);
+    color: white;
+    border: 0px;
+    border-radius: 0.25rem;
+    font-size: 1.2rem;
+    padding: 0.5rem 2rem;
+    margin: 0.5rem auto;
+}
+.submit-form:hover{
+    background-color: rgb(56, 159, 238); 
+}
+
+/* styling divs */
+.personal-info{
+    margin-top: 2rem;
+    padding:1rem 5vw ;
+}
+.skill{
+    margin-top: 1rem;
+    padding: 1rem 5vw;
+}
+.interest{
+    margin-top: 1rem;
+    padding: 1rem 5vw;
+}
+.education{
+    margin-top: 1rem;
+    padding: 1rem 5vw;
+}
+.skill>input{
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    width: 6rem;
+}
+.interest>input{
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    width: 6rem;
+}

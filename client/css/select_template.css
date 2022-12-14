@@ -1,0 +1,26 @@
+body{
+margin: 0;
+padding: 0;
+}
+.select-div{
+    display: inline-block;
+    position: relative;
+    left: 10vw;
+    width: 30vw;
+    height: 25vw;
+    padding-top: 2vw;
+}
+.div-2{
+    margin-left: 3rem;
+}
+img{
+    width: 28vw;
+    max-width: 28vw;
+    height: 20vw;
+    max-height: 20vw;
+}
+.select-h1{
+    display: inline-block;
+    padding-left:  2rem;
+    text-align: center;
+}

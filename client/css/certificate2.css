@@ -1,0 +1,112 @@
+
+
+#certificates{
+    padding: 2rem 0;
+    padding-left: 10vw;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    z-index: 1;
+    font-family: sans-serif, Arial, Helvetica;
+}
+.main-certificate-head{
+    font-size: 5rem;
+    
+}
+
+.certificate-1{
+    display: block;
+    width:75vw ;
+    height: 32rem;
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+    /* border: 1px solid black; */
+}
+.certificate-text{
+    /* border: 1px dotted lightblue; */
+    position: relative;
+    left:0;
+    top:0;
+    display: inline-block;
+    width: 45vw;
+    height: 30rem;
+}
+.certificate-title{
+    font-size: 3rem;
+    border-left: 4px solid rgb(25, 102, 153);
+    border-radius: 1rem;
+}
+.certificate-tech-stack{
+    font-size: 2rem;
+    color: rgba(24, 23, 23, 0.789);
+}
+.certificate-details{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.certificate-image{
+    display: inline-block;
+    position: relative;
+    left: 0vw;
+    width: 28vw;
+    height: 400px;
+    overflow: hidden;
+    /* border: 1px dotted rgb(98, 121, 129); */
+    transition-duration: 3s;
+}
+
+.certificate-img{
+    margin-left: 1rem;
+    margin-top: 1rem;
+    width: 28vw;
+    height: 350px;
+}
+
+/* Screen size between 1080px and 720px */
+@media (max-width: 1080px) and (min-width: 250px){
+    #certificates{
+        padding-left: 0;
+    }
+    .main-certificate-head{
+        display: block;
+        margin: 1rem auto;
+        
+    }
+    .certificate-1{
+       
+        display: block;
+        width:auto;
+        max-width: 100vw;
+        
+        height: 66rem;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .certificate-text{
+        max-width: 100vw;
+        width: 100%;
+        margin-bottom: 2rem;
+        height: 34rem;
+    }
+    .certificate-title{
+        padding-right: 4rem;
+    }
+    .certificate-details{
+        overflow-wrap: break-word;
+        word-wrap:break-word;
+        font-size: 1.5rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+   
+    .certificate-image{
+       
+        display: block;
+        width:auto;
+        max-width: 100vw;
+        margin-top: 1rem;
+    }
+    .certificate-img{
+        width: 100vw;
+        min-height: 30rem;
+    }
+}

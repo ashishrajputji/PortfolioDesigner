@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="../css/template_1.css">
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">    
+</head>
+<body>
+    <header>
+        <button onclick="move_top()">Move</button>
+  
+        <div class="hero-texts">
+            <h1 class="header_profession"><%= profession %></h1>
+            <h2 class="header_name"><%= name %></h2>
+        </div>
+        
+        <nav class="nav-bar">
+        <a href="">Projects </a>
+        <a class="active" href="#">Certificates</a>
+        <a href="#">Internships</a>
+        <a href="#">Resume</a>
+            </nav>
+    </header>
+
+
+        <div class="profile">
+            <nav class="nav-bar" style="top:0;">
+                <a href="">Projects </a>
+                <a class="active" href="#">Certificates</a>
+                <a href="#">Internships</a>
+                <a href="#">Resume</a>
+                    </nav>
+            <h1><%= name %></h1>
+            <div>
+                <button onclick="move_left()">Move</button>
+                <h1>Education</h1>
+                <% for(let i =0;i<edu_name.length; i++){  %>
+                <h2><%= edu_name[i] %>:</h2>
+                <h2><%= edu_stream[i] %></h2>
+                <p><%= edu_duration[i] %></p>
+                <h2><%= edu_cgpa[i] %></h2>
+                <% } %>
+            </div>
+            <ul >
+            <% for(let i =0;i<skills.length; i++){  %>    
+                <li><%= skills[i] %></li>
+            <% } %>   
+            </ul>
+            <ul>
+            <% for(let i =0;i<interest.length; i++){  %>    
+                <li><%= interest[i] %></li>
+            <% } %>  
+            </ul>
+        </div>
+        
+        <div class="projects">
+            <div>
+                <h1>Project Heading</h1>
+                <%for(let i=0;i<p_title.length;i++){ %> 
+                <div class="project-el">
+                    <h1><%= p_title[i] %> <span><%= p_duration[i] %></span></h1>
+                    <p><%= p_desc[i] %></p>
+                    <a href="#">Click To see Project Online</a>
+                </div>
+                <% } %>
+            </div>
+            <button onclick="move_down()">Move</button>
+        </div>
+        <div class="certificates">
+            <div>
+                <h1>Certificate Heading</h1>
+                <%for(let i=0;i<c_title.length;i++){ %> 
+                <div class="certificate-el">
+                    <h1><%= c_title[i] %> <span><%= c_duration[i] %></span></h1>
+                    <p><%= c_desc[i] %></p>
+                    <a href="#">Click To see Certificate Online</a>
+                </div>
+                <% } %>
+            </div>
+            <button onclick="move_right()">Move</button>
+        </div>
+        <div class="internships">
+            <div>
+                <h1>Internship Heading</h1>
+                <%for(let i=0;i<c_title.length;i++){ %> 
+                <div class="certificate-el">
+                    <h1><%= c_title[i] %> <span><%= c_duration[i] %></span></h1>
+                    <p><%= c_desc[i] %></p>
+                    <a href="#">Click To see Internship Online</a>
+                </div>
+                <% } %>
+            </div>
+            <button onclick="move_right()">Move</button>
+        </div>
+
+</body>
+<script src="./js/test.js"></script>
+</html>
