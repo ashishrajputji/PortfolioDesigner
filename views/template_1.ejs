@@ -35,23 +35,22 @@
                 <a href="#">Internships</a>
                 <a href="#">Resume</a>
                     </nav>
-            <h1><%= name %></h1>
-            <div>
-                <button onclick="move_left()">Move</button>
-                <h1>Education</h1>
+            <h1 class="name_profile"><%= name %></h1>
+            <button onclick="move_left()">Move</button>
+            <div class="edu-div">
+                <h1 header_profession>Education</h1>
                 <% for(let i =0;i<edu_name.length; i++){  %>
-                <h2><%= edu_name[i] %>:</h2>
-                <h2><%= edu_stream[i] %></h2>
-                <p><%= edu_duration[i] %></p>
-                <h2><%= edu_cgpa[i] %></h2>
+                <h2 class="edu-name"><%= edu_name[i] %>: (<%= edu_duration[i] %>)</h2>
+                <h2 class="edu-name"><%= edu_stream[i] %></h2>
+                <p><%= edu_cgpa[i] %></p>
                 <% } %>
             </div>
-            <ul >
+            <ul class="ul-profile">
             <% for(let i =0;i<skills.length; i++){  %>    
                 <li><%= skills[i] %></li>
             <% } %>   
             </ul>
-            <ul>
+            <ul class="ul-profile">
             <% for(let i =0;i<interest.length; i++){  %>    
                 <li><%= interest[i] %></li>
             <% } %>  

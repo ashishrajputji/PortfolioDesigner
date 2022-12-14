@@ -82,7 +82,8 @@ color: #000;
     display: none;
     position: relative;
     top: 0vh;
-    background-color: rgb(241, 241, 241);
+    background-color: #fff;
+    font-family: "Raleway", Arial, sans-serif;
     border: none;
     animation-duration: 1s;
     animation-timing-function: ease-in;
@@ -91,6 +92,59 @@ color: #000;
     0% {display: block; top:-5vh; opacity: 0.1;}
     100% {display: block; top:-100vh; opacity: 1;}
 }
+
+.name_profile{
+    color: grey;
+    text-transform: capitalize;
+    text-align: center;
+     font-family: "Raleway", Arial, sans-serif;
+    font-size: 2.5rem; 
+    letter-spacing: 6px;
+}
+.edu-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    margin-top: 1rem;
+    padding: 2rem 2rem;
+}
+.edu-div > .edu-name{
+    font-family: "Raleway", Arial, sans-serif;
+    font-size: 1.5rem; 
+    letter-spacing: 6px;
+    margin: 0;
+    padding: 2px;
+}
+.edu-div > p{
+    padding: 2px;
+    margin: 0;
+}
+ .ul-profile{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    -ms-flex-align: center;
+    margin: 0;
+}
+.ul-profile > li{
+    color: #000;
+    border: 1px solid lightgray;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 1rem;
+}
+.ul-profile > li:hover{
+    background-color: grey;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+
+
+
 .projects{
     width: 100vw;
     height: 100vh;
